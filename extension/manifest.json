@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Local Gemini TTS",
+  "version": "2.0",
+  "permissions": ["activeTab", "scripting", "contextMenus", "storage"],
+  "host_permissions": ["http://localhost:8000/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
+  }],
+  "action": { "default_popup": "popup.html" },
+  "icons": { "48": "icon.png" }
+}
