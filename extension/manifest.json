@@ -1,8 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Local Gemini TTS",
-  "version": "2.0",
-  "permissions": ["activeTab", "scripting", "contextMenus", "storage"],
+  "name": "M4 Narrator",
+  "version": "2.1",
+  "description": "Local M4-powered AI voice narrator.",
+  "permissions": ["activeTab", "scripting", "contextMenus", "storage", "clipboardRead"],
   "host_permissions": ["http://localhost:8000/*"],
   "background": { "service_worker": "background.js" },
   "content_scripts": [{

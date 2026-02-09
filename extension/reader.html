@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>M4 Narrator - Sanctuary</title>
+  <style>
+    body { font-family: 'Georgia', serif; line-height: 1.6; max-width: 90%; width: 1200px; margin: 60px auto; padding: 30px; background: #fdfdfd; color: #111; font-size: 24px; }
+    ::selection { background: #d8b4e2 !important; }
+    .header { position: fixed; top: 0; left: 0; width: 100%; background: #222; color: #eee; padding: 12px 25px; font-size: 13px; font-family: sans-serif; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; z-index: 1000; }
+    #closeBtn { background: #e74c3c; color: white; border: none; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold; }
+    #closeBtn:hover { background: #c0392b; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <span>M4 NARRATOR | Sanctuary Mode</span>
+    <div>
+      <span id="status" style="margin-right: 15px;">Ready</span>
+      <button id="closeBtn" onclick="window.close()">CLOSE TAB</button>
+    </div>
+  </div>
+  <div id="content">Loading text...</div>
+  <script src="content.js"></script>
+</body>
+</html>

@@ -1,19 +1,16 @@
-<!DOCTYPE html>
-<html>
 <body style="width: 220px; font-family: sans-serif; padding: 15px; background: #f9f9fb;">
-  <h3 style="font-size: 14px; margin: 0 0 10px 0;">Voice Settings</h3>
+  <h3 style="font-size: 14px; margin: 0 0 10px 0;">M4 Narrator</h3>
   <select id="voiceSelect" style="width: 100%; padding: 5px; margin-bottom: 15px;">
-    <option value="af_sarah">Sarah (Female - Soft)</option>
-    <option value="af_sky">Sky (Female - Clear)</option>
-    <option value="af_bella">Bella (Female - Warm)</option>
-    <option value="am_adam">Adam (Male - Deep)</option>
-    <option value="am_michael">Michael (Male - Standard)</option>
-    <option value="bf_emma">Emma (Female - British)</option>
-    <option value="bm_george">George (Male - British)</option>
+    <option value="af_sarah">Sarah (Female)</option>
+    <option value="am_adam">Adam (Male)</option>
+    <option value="bf_emma">Emma (British)</option>
   </select>
   <label style="font-size: 12px; display: block; margin-bottom: 5px;">Speed: <span id="speedVal">1.0</span>x</label>
-  <input type="range" id="speedSlider" min="0.5" max="1.5" step="0.1" value="1.0" style="width: 100%; margin-bottom: 20px;">
-  <button id="stopBtn" style="width: 100%; padding: 10px; background: #e74c3c; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">STOP READING</button>
+  <input type="range" id="speedSlider" min="0.5" max="2.0" step="0.1" value="1.0" style="width: 100%; margin-bottom: 15px;">
+  
+  <div style="display: flex; gap: 5px;">
+    <button id="pauseBtn" style="flex: 1; padding: 10px; background: #f39c12; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">PAUSE</button>
+    <button id="stopBtn" style="flex: 1; padding: 10px; background: #e74c3c; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">STOP</button>
+  </div>
   <script src="popup.js"></script>
 </body>
-</html>
