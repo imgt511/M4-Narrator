@@ -2,3 +2,9 @@ venv/
 *.onnx
 *.bin
 .DS_Store
+
+*.zip
+*.crx
+*.pem
+node_modules/
+.env
